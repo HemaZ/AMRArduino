@@ -4,7 +4,7 @@ import sys
 try:
 	ser = serial.Serial('/dev/ttyACM0',115200)
 except:
-	print "Unable to open serial port"
+	print "Unable to open serial port make sure that the arduino is connected"
 while True:
 			try:
 				line = ser.readline()
